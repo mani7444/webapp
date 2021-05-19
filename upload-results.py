@@ -2,6 +2,7 @@ import argparse
 from datetime import datetime
 import json
 import os
+import urllib3
 import requests
 
 def upload_results(host, user, api_key, scanner, result_file, engagement_id, verify=False): # set verify to False if ssl cert is self-signed
