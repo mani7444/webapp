@@ -22,25 +22,25 @@ pipeline {
       }
     }
     
-    stage ('Source Composition Analysis') {
-      steps {
-         sh 'rm owasp* || true'
-         sh 'wget "https://raw.githubusercontent.com/cehkunal/webapp/master/owasp-dependency-check.sh" '
-         sh 'chmod +x owasp-dependency-check.sh'
-         sh 'bash owasp-dependency-check.sh'
-         sh 'cat /var/lib/jenkins/OWASP-Dependency-Check/reports/dependency-check-report.xml'
+   // stage ('Source Composition Analysis') {
+     // steps {
+       //  sh 'rm owasp* || true'
+         // sh 'wget "https://raw.githubusercontent.com/cehkunal/webapp/master/owasp-dependency-check.sh" '
+         // sh 'chmod +x owasp-dependency-check.sh'
+         // sh 'bash owasp-dependency-check.sh'
+         //sh 'cat /var/lib/jenkins/OWASP-Dependency-Check/reports/dependency-check-report.xml'
         
-      }
-    }
+    //  }
+    // }
     
-    stage ('SAST') {
-      steps {
-        withSonarQubeEnv('sonar') {
-          sh 'mvn sonar:sonar'
-          sh 'cat target/sonar/report-task.txt'
-        }
-      }
-    }
+    // stage ('SAST') {
+      // steps {
+        // withSonarQubeEnv('sonar') {
+          // sh 'mvn sonar:sonar'
+          // sh 'cat target/sonar/report-task.txt'
+       // }
+     // }
+    // }
     
     stage ('Build') {
       steps {
@@ -55,15 +55,22 @@ pipeline {
              // }      
          //  }       
    // }
+     
     
-    
-    stage ('DAST') {
-      steps {
-        sshagent(['zap']) {
-         sh 'ssh -o  StrictHostKeyChecking=no ubuntu@13.232.158.44 "docker run -t owasp/zap2docker-stable zap-baseline.py -t http://13.232.202.25:8080/webapp/" || true'
-        }
-      }
-    }
+    // stage ('DAST') {
+      // steps {
+       // sshagent(['zap']) {
+         // sh 'ssh -o  StrictHostKeyChecking=no ubuntu@13.232.158.44 "docker run -t owasp/zap2docker-stable zap-baseline.py -t http://13.232.202.25:8080/webapp/" || true'
+       // }
+      // }
+   // }
+ 
+    stage ('Upload Reports to Defect Dojo') {
+		    steps {
+			sh 'pip install requests'
+			sh 'wget https://raw.githubusercontent.com/devopssecure/webapp/master/upload-results.py'
+			sh 'chmod +x upload-results.py'
+			sh 'python upload-results.py --host 18.191.136.107:8080 --api_key 66879c160803596f132aff025fee9a170366f615 --engagement_id 4 --result_file trufflehog --username admin --scanner "SSL Labs Scan"'
     
   }
 }
