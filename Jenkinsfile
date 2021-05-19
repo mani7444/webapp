@@ -68,7 +68,7 @@ pipeline {
     stage ('Upload Reports to Defect Dojo') {
 		    steps {
 			sh 'pip install requests'
-			sh 'wget https://raw.githubusercontent.com/devopssecure/webapp/master/upload-results.py'
+			sh 'wget https://raw.githubusercontent.com/cyclopsbarrack/webapp/master/upload-results.py'
 			sh 'chmod +x upload-results.py'
 			sh 'python upload-results.py --host 18.191.136.107:8080 --api_key 6f753d875fbd8a855781f9245eaaa7b893a2c2a4 --engagement_id 1 --result_file trufflehog --username admin --scanner "SSL Labs Scan"'
     
