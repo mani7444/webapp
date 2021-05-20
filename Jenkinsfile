@@ -23,9 +23,9 @@ pipeline {
    // }
     
    stage ('Source Composition Analysis') {
-      steps {
-         sh 'rm owasp* || true'
-          sh 'wget "https://raw.githubusercontent.com/cehkunal/webapp/master/owasp-dependency-check.sh" '
+     steps {
+        sh 'rm owasp* || true'
+           sh 'wget "https://raw.githubusercontent.com/cehkunal/webapp/master/owasp-dependency-check.sh" '
           sh 'chmod +x owasp-dependency-check.sh'
           sh 'bash owasp-dependency-check.sh'
          sh 'cat /var/lib/jenkins/OWASP-Dependency-Check/reports/dependency-check-report.xml'
@@ -65,13 +65,13 @@ pipeline {
       // }
    // }
  
-    stage ('Upload Reports to Defect Dojo') {
-		    steps {
-			sh 'pip install requests'
-			sh 'wget https://raw.githubusercontent.com/cyclopsbarrack/webapp/master/upload-results.py'
-			sh 'chmod +x upload-results.py'
+    // stage ('Upload Reports to Defect Dojo') {
+		  //  steps {
+		//	sh 'pip install requests'
+		//	sh 'wget https://raw.githubusercontent.com/cyclopsbarrack/webapp/master/upload-results.py'
+		//	sh 'chmod +x upload-results.py'
 			// sh 'python upload-results.py --host 3.143.225.237:8080 --api_key d915aad678f94b1ca7fde4eb4016d8cc1d45a788 --engagement_id 1 --result_file trufflehog --username admin --scanner "SSL Labs Scan"'
-                        sh 'python upload-results.py --host 13.59.142.183:8080 --api_key d915aad678f94b1ca7fde4eb4016d8cc1d45a788 --engagement_id 5 --result_file /var/lib/jenkins/OWASP-Dependency-Check/reports/dependency-check-report.xml --username admin --scanner "Dependency Check Scan"'
+                  //      sh 'python upload-results.py --host 13.59.142.183:8080 --api_key d915aad678f94b1ca7fde4eb4016d8cc1d45a788 --engagement_id 5 --result_file /var/lib/jenkins/OWASP-Dependency-Check/reports/dependency-check-report.xml --username admin --scanner "Dependency Check Scan"'
   }
 }
   }
