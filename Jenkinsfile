@@ -13,14 +13,14 @@ pipeline {
       }
     }
     
-    stage ('Check-Git-Secrets') {
-      steps {
-        sh 'rm trufflehog || true'
+   // stage ('Check-Git-Secrets') {
+     // steps {
+      //  sh 'rm trufflehog || true'
        // sh 'chmod 666 /var/run/docker.sock'
-        sh 'docker run gesellix/trufflehog --json https://github.com/cyclopsbarrack/webapp.git > trufflehog'
-        sh 'cat trufflehog'
-      }
-    }
+       // sh 'docker run gesellix/trufflehog --json https://github.com/cyclopsbarrack/webapp.git > trufflehog'
+       // sh 'cat trufflehog'
+     // }
+   // }
     
    // stage ('Source Composition Analysis') {
      // steps {
@@ -57,13 +57,13 @@ pipeline {
    // }
      
     
-    // stage ('DAST') {
-      // steps {
-       // sshagent(['zap']) {
-         // sh 'ssh -o  StrictHostKeyChecking=no ubuntu@13.232.158.44 "docker run -t owasp/zap2docker-stable zap-baseline.py -t http://13.232.202.25:8080/webapp/" || true'
-       // }
-      // }
-   // }
+     stage ('DAST') {
+       steps {
+        sshagent(['zap']) {
+          sh 'ssh -o  StrictHostKeyChecking=no ubuntu@18.116.25.211 "docker run -t owasp/zap2docker-stable zap-baseline.py -t http://testphp.vulnweb.com/" || true'
+        }
+       }
+   }
  
     stage ('Upload Reports to Defect Dojo') {
 		    steps {
