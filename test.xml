@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Thu May 20 15:09:55 2021 as: nmap -vvv -p- -sV -&#45;script vuln -oX test.xml 45.33.32.156 -->
+<nmaprun scanner="nmap" args="nmap -vvv -p- -sV -&#45;script vuln -oX test.xml 45.33.32.156" start="1621503595" startstr="Thu May 20 15:09:55 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="3"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1621503596"/>
+<taskend task="NSE" time="1621503606"/>
+<taskbegin task="NSE" time="1621503606"/>
+<taskend task="NSE" time="1621503606"/>
+<taskbegin task="Ping Scan" time="1621503606"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="45.33.32.156" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1621503606" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1621503606"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1621503606"/>
+<taskbegin task="SYN Stealth Scan" time="1621503606"/>
+<taskprogress task="SYN Stealth Scan" time="1621503637" percent="1.71" remaining="1786" etc="1621505422"/>
+<taskprogress task="SYN Stealth Scan" time="1621503667" percent="3.95" remaining="1485" etc="1621505152"/>
+<taskprogress task="SYN Stealth Scan" time="1621503697" percent="4.90" remaining="1765" etc="1621505462"/>
+<taskprogress task="SYN Stealth Scan" time="1621503727" percent="6.85" remaining="1646" etc="1621505372"/>
+<taskprogress task="SYN Stealth Scan" time="1621503757" percent="9.59" remaining="1425" etc="1621505181"/>
+<taskprogress task="SYN Stealth Scan" time="1621503787" percent="12.49" remaining="1269" etc="1621505055"/>
+<taskprogress task="SYN Stealth Scan" time="1621503817" percent="15.12" remaining="1185" etc="1621505001"/>
+<taskprogress task="SYN Stealth Scan" time="1621503847" percent="18.73" remaining="1046" etc="1621504892"/>
+<taskprogress task="SYN Stealth Scan" time="1621503902" percent="23.08" remaining="987" etc="1621504889"/>
+<taskprogress task="SYN Stealth Scan" time="1621503959" percent="26.62" remaining="973" etc="1621504932"/>
+<taskprogress task="SYN Stealth Scan" time="1621503966" percent="26.95" remaining="976" etc="1621504942"/>
+<taskprogress task="SYN Stealth Scan" time="1621503967" percent="27.01" remaining="976" etc="1621504942"/>
+<taskprogress task="SYN Stealth Scan" time="1621504076" percent="32.62" remaining="971" etc="1621505047"/>
+<taskprogress task="SYN Stealth Scan" time="1621504205" percent="40.02" remaining="898" etc="1621505103"/>
+<taskprogress task="SYN Stealth Scan" time="1621504218" percent="40.89" remaining="885" etc="1621505103"/>
+<taskprogress task="SYN Stealth Scan" time="1621504317" percent="46.84" remaining="807" etc="1621505124"/>
+<taskprogress task="SYN Stealth Scan" time="1621504374" percent="49.92" remaining="771" etc="1621505145"/>
+<taskprogress task="SYN Stealth Scan" time="1621504466" percent="55.30" remaining="696" etc="1621505161"/>
+<taskprogress task="SYN Stealth Scan" time="1621504547" percent="60.48" remaining="615" etc="1621505162"/>
+<taskprogress task="SYN Stealth Scan" time="1621504634" percent="65.77" remaining="536" etc="1621505169"/>
+<taskprogress task="SYN Stealth Scan" time="1621504639" percent="66.14" remaining="529" etc="1621505168"/>
+<taskprogress task="SYN Stealth Scan" time="1621504729" percent="71.39" remaining="451" etc="1621505179"/>
+<taskprogress task="SYN Stealth Scan" time="1621504804" percent="76.40" remaining="371" etc="1621505174"/>
+<taskprogress task="SYN Stealth Scan" time="1621504876" percent="81.49" remaining="289" etc="1621505165"/>
+<taskprogress task="SYN Stealth Scan" time="1621504913" percent="84.21" remaining="246" etc="1621505158"/>
+<taskprogress task="SYN Stealth Scan" time="1621504914" percent="84.25" remaining="245" etc="1621505159"/>
+<taskprogress task="SYN Stealth Scan" time="1621504999" percent="89.05" remaining="172" etc="1621505170"/>
+<taskprogress task="SYN Stealth Scan" time="1621505077" percent="94.15" remaining="92" etc="1621505168"/>
+<taskend task="SYN Stealth Scan" time="1621505175" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1621505175"/>
+<taskend task="Service scan" time="1621505181" extrainfo="4 services on 1 host"/>
+<taskbegin task="NSE" time="1621505181"/>
+<taskprogress task="NSE" time="1621505212" percent="99.23" remaining="1" etc="1621505212"/>
+<taskprogress task="NSE" time="1621505242" percent="99.42" remaining="1" etc="1621505242"/>
+<taskprogress task="NSE" time="1621505272" percent="99.42" remaining="1" etc="1621505273"/>
+<taskprogress task="NSE" time="1621505302" percent="99.42" remaining="1" etc="1621505303"/>
+<taskprogress task="NSE" time="1621505332" percent="99.42" remaining="1" etc="1621505333"/>
+<taskprogress task="NSE" time="1621505362" percent="99.42" remaining="2" etc="1621505363"/>
+<taskprogress task="NSE" time="1621505392" percent="99.42" remaining="2" etc="1621505393"/>
+<taskprogress task="NSE" time="1621505416" percent="99.42" remaining="2" etc="1621505417"/>
+<taskprogress task="NSE" time="1621505446" percent="99.42" remaining="2" etc="1621505448"/>
+<taskprogress task="NSE" time="1621505476" percent="99.42" remaining="2" etc="1621505478"/>
+<taskprogress task="NSE" time="1621505506" percent="99.42" remaining="2" etc="1621505508"/>
+<taskprogress task="NSE" time="1621505536" percent="99.42" remaining="3" etc="1621505538"/>
+<taskprogress task="NSE" time="1621505566" percent="99.42" remaining="3" etc="1621505568"/>
+<taskprogress task="NSE" time="1621505596" percent="99.42" remaining="3" etc="1621505598"/>
+<taskprogress task="NSE" time="1621505626" percent="99.42" remaining="3" etc="1621505629"/>
+<taskprogress task="NSE" time="1621505628" percent="99.42" remaining="3" etc="1621505631"/>
+<taskprogress task="NSE" time="1621505630" percent="99.42" remaining="3" etc="1621505633"/>
+<taskprogress task="NSE" time="1621505630" percent="99.42" remaining="3" etc="1621505633"/>
+<taskprogress task="NSE" time="1621505660" percent="99.42" remaining="3" etc="1621505663"/>
+<taskprogress task="NSE" time="1621505690" percent="99.61" remaining="2" etc="1621505692"/>
+<taskend task="NSE" time="1621505694"/>
+<taskbegin task="NSE" time="1621505694"/>
+<taskend task="NSE" time="1621505696"/>
+<host starttime="1621503606" endtime="1621505696"><status state="up" reason="reset" reason_ttl="49"/>
+<address addr="45.33.32.156" addrtype="ipv4"/>
+<hostnames>
+<hostname name="scanme.nmap.org" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65507">
+<extrareasons reason="resets" count="65507"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="48"/><service name="ssh" product="OpenSSH" version="6.6.1p1 Ubuntu 2ubuntu2.13" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:6.6.1p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="vulners" output="&#xa;  cpe:/a:openbsd:openssh:6.6.1p1: &#xa;    &#x9;EDB-ID:21018&#x9;10.0&#x9;https://vulners.com/exploitdb/EDB-ID:21018&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2001-0554&#x9;10.0&#x9;https://vulners.com/cve/CVE-2001-0554&#xa;    &#x9;CVE-2015-5600&#x9;8.5&#x9;https://vulners.com/cve/CVE-2015-5600&#xa;    &#x9;CVE-2020-16088&#x9;7.5&#x9;https://vulners.com/cve/CVE-2020-16088&#xa;    &#x9;CVE-2015-6564&#x9;6.9&#x9;https://vulners.com/cve/CVE-2015-6564&#xa;    &#x9;CVE-2018-15919&#x9;5.0&#x9;https://vulners.com/cve/CVE-2018-15919&#xa;    &#x9;MSF:ILITIES/OPENBSD-OPENSSH-CVE-2020-14145/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/OPENBSD-OPENSSH-CVE-2020-14145/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP9-CVE-2020-14145/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP9-CVE-2020-14145/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-14145/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-14145/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2020-14145/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2020-14145/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/F5-BIG-IP-CVE-2020-14145/&#x9;4.3&#x9;https://vulners.com/metasploit/MSF:ILITIES/F5-BIG-IP-CVE-2020-14145/&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2020-14145&#x9;4.3&#x9;https://vulners.com/cve/CVE-2020-14145&#xa;    &#x9;CVE-2015-5352&#x9;4.3&#x9;https://vulners.com/cve/CVE-2015-5352&#xa;    &#x9;CVE-2015-6563&#x9;1.9&#x9;https://vulners.com/cve/CVE-2015-6563"><table key="cpe:/a:openbsd:openssh:6.6.1p1">
+<table>
+<elem key="id">EDB-ID:21018</elem>
+<elem key="type">exploitdb</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">10.0</elem>
+</table>
+<table>
+<elem key="id">CVE-2001-0554</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">10.0</elem>
+</table>
+<table>
+<elem key="id">CVE-2015-5600</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">8.5</elem>
+</table>
+<table>
+<elem key="id">CVE-2020-16088</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="id">CVE-2015-6564</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">6.9</elem>
+</table>
+<table>
+<elem key="id">CVE-2018-15919</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">MSF:ILITIES/OPENBSD-OPENSSH-CVE-2020-14145/</elem>
+<elem key="type">metasploit</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP9-CVE-2020-14145/</elem>
+<elem key="type">metasploit</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-14145/</elem>
+<elem key="type">metasploit</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="id">MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2020-14145/</elem>
+<elem key="type">metasploit</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="id">MSF:ILITIES/F5-BIG-IP-CVE-2020-14145/</elem>
+<elem key="type">metasploit</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="id">CVE-2020-14145</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="id">CVE-2015-5352</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="id">CVE-2015-6563</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">1.9</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="23"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="25"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="49"/><service name="http" product="Apache httpd" version="2.4.7" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.7</cpe></service><script id="http-csrf" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=scanme.nmap.org&#xa;  Found the following possible CSRF vulnerabilities: &#xa;    &#xa;    Path: http://scanme.nmap.org:80/&#xa;    Form id: cse-search-box-sidebar&#xa;    Form action: https://nmap.org/search.html&#xa;"/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-enum" output="&#xa;  /images/: Potentially interesting directory w/ listing on &apos;apache/2.4.7 (ubuntu)&apos;&#xa;  /shared/: Potentially interesting directory w/ listing on &apos;apache/2.4.7 (ubuntu)&apos;&#xa;"/><script id="http-jsonp-detection" output="Couldn&apos;t find any JSONP endpoints."/><script id="http-litespeed-sourcecode-download" output="Request with null byte did not work. This web server might not be vulnerable"/><script id="http-server-header" output="Apache/2.4.7 (Ubuntu)"><elem>Apache/2.4.7 (Ubuntu)</elem>
+</script><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-wordpress-users" output="[Error] Wordpress installation was not found. We couldn&apos;t find wp-login.php"/><script id="vulners" output="&#xa;  cpe:/a:apache:http_server:2.4.7: &#xa;    &#x9;CVE-2017-7679&#x9;7.5&#x9;https://vulners.com/cve/CVE-2017-7679&#xa;    &#x9;CVE-2017-3167&#x9;7.5&#x9;https://vulners.com/cve/CVE-2017-3167&#xa;    &#x9;PACKETSTORM:127546&#x9;6.8&#x9;https://vulners.com/packetstorm/PACKETSTORM:127546&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:34133&#x9;6.8&#x9;https://vulners.com/exploitdb/EDB-ID:34133&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2018-1312&#x9;6.8&#x9;https://vulners.com/cve/CVE-2018-1312&#xa;    &#x9;CVE-2017-15715&#x9;6.8&#x9;https://vulners.com/cve/CVE-2017-15715&#xa;    &#x9;CVE-2014-0226&#x9;6.8&#x9;https://vulners.com/cve/CVE-2014-0226&#xa;    &#x9;1337DAY-ID-22451&#x9;6.8&#x9;https://vulners.com/zdt/1337DAY-ID-22451&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2017-9788&#x9;6.4&#x9;https://vulners.com/cve/CVE-2017-9788&#xa;    &#x9;MSF:ILITIES/REDHAT_LINUX-CVE-2019-0217/&#x9;6.0&#x9;https://vulners.com/metasploit/MSF:ILITIES/REDHAT_LINUX-CVE-2019-0217/&#x9;*EXPLOIT*&#xa;    &#x9;MSF:ILITIES/IBM-HTTP_SERVER-CVE-2019-0217/&#x9;6.0&#x9;https://vulners.com/metasploit/MSF:ILITIES/IBM-HTTP_SERVER-CVE-2019-0217/&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2019-0217&#x9;6.0&#x9;https://vulners.com/cve/CVE-2019-0217&#xa;    &#x9;EDB-ID:47689&#x9;5.8&#x9;https://vulners.com/exploitdb/EDB-ID:47689&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2020-1927&#x9;5.8&#x9;https://vulners.com/cve/CVE-2020-1927&#xa;    &#x9;CVE-2019-10098&#x9;5.8&#x9;https://vulners.com/cve/CVE-2019-10098&#xa;    &#x9;1337DAY-ID-33577&#x9;5.8&#x9;https://vulners.com/zdt/1337DAY-ID-33577&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2016-5387&#x9;5.1&#x9;https://vulners.com/cve/CVE-2016-5387&#xa;    &#x9;SSV:96537&#x9;5.0&#x9;https://vulners.com/seebug/SSV:96537&#x9;*EXPLOIT*&#xa;    &#x9;SSV:61874&#x9;5.0&#x9;https://vulners.com/seebug/SSV:61874&#x9;*EXPLOIT*&#xa;    &#x9;MSF:AUXILIARY/SCANNER/HTTP/APACHE_OPTIONSBLEED&#x9;5.0&#x9;https://vulners.com/metasploit/MSF:AUXILIARY/SCANNER/HTTP/APACHE_OPTIONSBLEED&#x9;*EXPLOIT*&#xa;    &#x9;EXPLOITPACK:DAED9B9E8D259B28BF72FC7FDC4755A7&#x9;5.0&#x9;https://vulners.com/exploitpack/EXPLOITPACK:DAED9B9E8D259B28BF72FC7FDC4755A7&#x9;*EXPLOIT*&#xa;    &#x9;EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D&#x9;5.0&#x9;https://vulners.com/exploitpack/EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2020-1934&#x9;5.0&#x9;https://vulners.com/cve/CVE-2020-1934&#xa;    &#x9;CVE-2019-0220&#x9;5.0&#x9;https://vulners.com/cve/CVE-2019-0220&#xa;    &#x9;CVE-2018-17199&#x9;5.0&#x9;https://vulners.com/cve/CVE-2018-17199&#xa;    &#x9;CVE-2018-17189&#x9;5.0&#x9;https://vulners.com/cve/CVE-2018-17189&#xa;    &#x9;CVE-2018-1303&#x9;5.0&#x9;https://vulners.com/cve/CVE-2018-1303&#xa;    &#x9;CVE-2017-9798&#x9;5.0&#x9;https://vulners.com/cve/CVE-2017-9798&#xa;    &#x9;CVE-2017-15710&#x9;5.0&#x9;https://vulners.com/cve/CVE-2017-15710&#xa;    &#x9;CVE-2016-8743&#x9;5.0&#x9;https://vulners.com/cve/CVE-2016-8743&#xa;    &#x9;CVE-2016-2161&#x9;5.0&#x9;https://vulners.com/cve/CVE-2016-2161&#xa;    &#x9;CVE-2016-0736&#x9;5.0&#x9;https://vulners.com/cve/CVE-2016-0736&#xa;    &#x9;CVE-2015-3183&#x9;5.0&#x9;https://vulners.com/cve/CVE-2015-3183&#xa;    &#x9;CVE-2015-0228&#x9;5.0&#x9;https://vulners.com/cve/CVE-2015-0228&#xa;    &#x9;CVE-2014-3523&#x9;5.0&#x9;https://vulners.com/cve/CVE-2014-3523&#xa;    &#x9;CVE-2014-0231&#x9;5.0&#x9;https://vulners.com/cve/CVE-2014-0231&#xa;    &#x9;CVE-2014-0098&#x9;5.0&#x9;https://vulners.com/cve/CVE-2014-0098&#xa;    &#x9;CVE-2013-6438&#x9;5.0&#x9;https://vulners.com/cve/CVE-2013-6438&#xa;    &#x9;1337DAY-ID-28573&#x9;5.0&#x9;https://vulners.com/zdt/1337DAY-ID-28573&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-26574&#x9;5.0&#x9;https://vulners.com/zdt/1337DAY-ID-26574&#x9;*EXPLOIT*&#xa;    &#x9;SSV:87152&#x9;4.3&#x9;https://vulners.com/seebug/SSV:87152&#x9;*EXPLOIT*&#xa;    &#x9;PACKETSTORM:127563&#x9;4.3&#x9;https://vulners.com/packetstorm/PACKETSTORM:127563&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:47688&#x9;4.3&#x9;https://vulners.com/exploitdb/EDB-ID:47688&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2020-11985&#x9;4.3&#x9;https://vulners.com/cve/CVE-2020-11985&#xa;    &#x9;CVE-2019-10092&#x9;4.3&#x9;https://vulners.com/cve/CVE-2019-10092&#xa;    &#x9;CVE-2018-1302&#x9;4.3&#x9;https://vulners.com/cve/CVE-2018-1302&#xa;    &#x9;CVE-2018-1301&#x9;4.3&#x9;https://vulners.com/cve/CVE-2018-1301&#xa;    &#x9;CVE-2016-4975&#x9;4.3&#x9;https://vulners.com/cve/CVE-2016-4975&#xa;    &#x9;CVE-2015-3185&#x9;4.3&#x9;https://vulners.com/cve/CVE-2015-3185&#xa;    &#x9;CVE-2014-8109&#x9;4.3&#x9;https://vulners.com/cve/CVE-2014-8109&#xa;    &#x9;CVE-2014-0118&#x9;4.3&#x9;https://vulners.com/cve/CVE-2014-0118&#xa;    &#x9;CVE-2014-0117&#x9;4.3&#x9;https://vulners.com/cve/CVE-2014-0117&#xa;    &#x9;1337DAY-ID-33575&#x9;4.3&#x9;https://vulners.com/zdt/1337DAY-ID-33575&#x9;*EXPLOIT*&#xa;    &#x9;CVE-2018-1283&#x9;3.5&#x9;https://vulners.com/cve/CVE-2018-1283&#xa;    &#x9;CVE-2016-8612&#x9;3.3&#x9;https://vulners.com/cve/CVE-2016-8612&#xa;    &#x9;PACKETSTORM:140265&#x9;0.0&#x9;https://vulners.com/packetstorm/PACKETSTORM:140265&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:42745&#x9;0.0&#x9;https://vulners.com/exploitdb/EDB-ID:42745&#x9;*EXPLOIT*&#xa;    &#x9;EDB-ID:40961&#x9;0.0&#x9;https://vulners.com/exploitdb/EDB-ID:40961&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-601&#x9;0.0&#x9;https://vulners.com/zdt/1337DAY-ID-601&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-2237&#x9;0.0&#x9;https://vulners.com/zdt/1337DAY-ID-2237&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-1415&#x9;0.0&#x9;https://vulners.com/zdt/1337DAY-ID-1415&#x9;*EXPLOIT*&#xa;    &#x9;1337DAY-ID-1161&#x9;0.0&#x9;https://vulners.com/zdt/1337DAY-ID-1161&#x9;*EXPLOIT*"><table key="cpe:/a:apache:http_server:2.4.7">
+<table>
+<elem key="id">CVE-2017-7679</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="id">CVE-2017-3167</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="id">PACKETSTORM:127546</elem>
+<elem key="type">packetstorm</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">6.8</elem>
+</table>
+<table>
+<elem key="id">EDB-ID:34133</elem>
+<elem key="type">exploitdb</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">6.8</elem>
+</table>
+<table>
+<elem key="id">CVE-2018-1312</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">6.8</elem>
+</table>
+<table>
+<elem key="id">CVE-2017-15715</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">6.8</elem>
+</table>
+<table>
+<elem key="id">CVE-2014-0226</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">6.8</elem>
+</table>
+<table>
+<elem key="id">1337DAY-ID-22451</elem>
+<elem key="type">zdt</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">6.8</elem>
+</table>
+<table>
+<elem key="id">CVE-2017-9788</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">6.4</elem>
+</table>
+<table>
+<elem key="id">MSF:ILITIES/REDHAT_LINUX-CVE-2019-0217/</elem>
+<elem key="type">metasploit</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">6.0</elem>
+</table>
+<table>
+<elem key="id">MSF:ILITIES/IBM-HTTP_SERVER-CVE-2019-0217/</elem>
+<elem key="type">metasploit</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">6.0</elem>
+</table>
+<table>
+<elem key="id">CVE-2019-0217</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">6.0</elem>
+</table>
+<table>
+<elem key="id">EDB-ID:47689</elem>
+<elem key="type">exploitdb</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">5.8</elem>
+</table>
+<table>
+<elem key="id">CVE-2020-1927</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.8</elem>
+</table>
+<table>
+<elem key="id">CVE-2019-10098</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.8</elem>
+</table>
+<table>
+<elem key="id">1337DAY-ID-33577</elem>
+<elem key="type">zdt</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">5.8</elem>
+</table>
+<table>
+<elem key="id">CVE-2016-5387</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.1</elem>
+</table>
+<table>
+<elem key="id">SSV:96537</elem>
+<elem key="type">seebug</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">SSV:61874</elem>
+<elem key="type">seebug</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">MSF:AUXILIARY/SCANNER/HTTP/APACHE_OPTIONSBLEED</elem>
+<elem key="type">metasploit</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">EXPLOITPACK:DAED9B9E8D259B28BF72FC7FDC4755A7</elem>
+<elem key="type">exploitpack</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">EXPLOITPACK:C8C256BE0BFF5FE1C0405CB0AA9C075D</elem>
+<elem key="type">exploitpack</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">CVE-2020-1934</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">CVE-2019-0220</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">CVE-2018-17199</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">CVE-2018-17189</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">CVE-2018-1303</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">CVE-2017-9798</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">CVE-2017-15710</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">CVE-2016-8743</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">CVE-2016-2161</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">CVE-2016-0736</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">CVE-2015-3183</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">CVE-2015-0228</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">CVE-2014-3523</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">CVE-2014-0231</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">CVE-2014-0098</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">CVE-2013-6438</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">1337DAY-ID-28573</elem>
+<elem key="type">zdt</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">1337DAY-ID-26574</elem>
+<elem key="type">zdt</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="id">SSV:87152</elem>
+<elem key="type">seebug</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="id">PACKETSTORM:127563</elem>
+<elem key="type">packetstorm</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="id">EDB-ID:47688</elem>
+<elem key="type">exploitdb</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="id">CVE-2020-11985</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="id">CVE-2019-10092</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="id">CVE-2018-1302</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="id">CVE-2018-1301</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="id">CVE-2016-4975</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="id">CVE-2015-3185</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="id">CVE-2014-8109</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="id">CVE-2014-0118</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="id">CVE-2014-0117</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="id">1337DAY-ID-33575</elem>
+<elem key="type">zdt</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="id">CVE-2018-1283</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="id">CVE-2016-8612</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">3.3</elem>
+</table>
+<table>
+<elem key="id">PACKETSTORM:140265</elem>
+<elem key="type">packetstorm</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">0.0</elem>
+</table>
+<table>
+<elem key="id">EDB-ID:42745</elem>
+<elem key="type">exploitdb</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">0.0</elem>
+</table>
+<table>
+<elem key="id">EDB-ID:40961</elem>
+<elem key="type">exploitdb</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">0.0</elem>
+</table>
+<table>
+<elem key="id">1337DAY-ID-601</elem>
+<elem key="type">zdt</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">0.0</elem>
+</table>
+<table>
+<elem key="id">1337DAY-ID-2237</elem>
+<elem key="type">zdt</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">0.0</elem>
+</table>
+<table>
+<elem key="id">1337DAY-ID-1415</elem>
+<elem key="type">zdt</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">0.0</elem>
+</table>
+<table>
+<elem key="id">1337DAY-ID-1161</elem>
+<elem key="type">zdt</elem>
+<elem key="is_exploit">true</elem>
+<elem key="cvss">0.0</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="123"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ntp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="137"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ns" method="table" conf="3"/></port>
+<port protocol="tcp" portid="138"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-dgm" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http-rpc-epmap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1900"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="upnp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2323"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="3d-nfsd" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3005"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="deslogin" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5555"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="freeciv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7547"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="cwmp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8600"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="asterix" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9663"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="9929"><state state="open" reason="syn-ack" reason_ttl="50"/><service name="nping-echo" product="Nping echo" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="11211"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="memcache" method="table" conf="3"/></port>
+<port protocol="tcp" portid="30050"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31337"><state state="open" reason="syn-ack" reason_ttl="49"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="37215"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="41285"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="48101"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50002"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="iiimsf" method="table" conf="3"/></port>
+<port protocol="tcp" portid="52869"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="65535"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+</ports>
+<times srtt="241889" rttvar="6718" to="268761"/>
+</host>
+<taskbegin task="NSE" time="1621505696"/>
+<taskend task="NSE" time="1621505696"/>
+<taskbegin task="NSE" time="1621505696"/>
+<taskend task="NSE" time="1621505696"/>
+<runstats><finished time="1621505696" timestr="Thu May 20 15:44:56 2021" summary="Nmap done at Thu May 20 15:44:56 2021; 1 IP address (1 host up) scanned in 2100.61 seconds" elapsed="2100.61" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
