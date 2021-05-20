@@ -74,5 +74,3 @@ pipeline {
                   //      sh 'python upload-results.py --host 13.59.142.183:8080 --api_key d915aad678f94b1ca7fde4eb4016d8cc1d45a788 --engagement_id 5 --result_file /var/lib/jenkins/OWASP-Dependency-Check/reports/dependency-check-report.xml --username admin --scanner "Dependency Check Scan"'
   }
 }
-  }
-}
