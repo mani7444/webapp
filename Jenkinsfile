@@ -13,14 +13,14 @@ pipeline {
       }
     }
     
-   // stage ('Check-Git-Secrets') {
-     // steps {
-      //  sh 'rm trufflehog || true'
-       // sh 'chmod 666 /var/run/docker.sock'
-       // sh 'docker run gesellix/trufflehog --json https://github.com/cyclopsbarrack/webapp.git > trufflehog'
-       // sh 'cat trufflehog'
-     // }
-   // }
+    stage ('Check-Git-Secrets') {
+      steps {
+        sh 'rm trufflehog || true'
+        sh 'chmod 666 /var/run/docker.sock'
+        sh 'docker run gesellix/trufflehog --json https://github.com/cyclopsbarrack/webapp.git > trufflehog'
+        sh 'cat trufflehog'
+      }
+    }
     
    stage ('Source Composition Analysis') {
      steps {
@@ -65,14 +65,14 @@ pipeline {
       // }
    // }
  
-     stage ('Upload Reports to Defect Dojo') {
-		   steps {
-			sh 'pip install requests'
-			sh 'wget https://raw.githubusercontent.com/cyclopsbarrack/webapp/master/upload-results.py'
-			sh 'chmod +x upload-results.py'
+    // stage ('Upload Reports to Defect Dojo') {
+		 //  steps {
+		//	sh 'pip install requests'
+		//	sh 'wget https://raw.githubusercontent.com/cyclopsbarrack/webapp/master/upload-results.py'
+		//	sh 'chmod +x upload-results.py'
 			// sh 'python upload-results.py --host 3.143.225.237:8080 --api_key d915aad678f94b1ca7fde4eb4016d8cc1d45a788 --engagement_id 1 --result_file trufflehog --username admin --scanner "SSL Labs Scan"'
-                      sh 'python upload-results.py --host 13.59.142.183:8080 --api_key d915aad678f94b1ca7fde4eb4016d8cc1d45a788 --engagement_id 5 --result_file /var/lib/jenkins/OWASP-Dependency-Check/reports/dependency-check-report.xml --username admin --scanner "Dependency Check Scan"'
-  }
-}
+                  //    sh 'python upload-results.py --host 13.59.142.183:8080 --api_key d915aad678f94b1ca7fde4eb4016d8cc1d45a788 --engagement_id 5 --result_file /var/lib/jenkins/OWASP-Dependency-Check/reports/dependency-check-report.xml --username admin --scanner "Dependency Check Scan"'
+ // }
+// }
   }
 }
