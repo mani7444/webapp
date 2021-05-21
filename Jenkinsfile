@@ -70,7 +70,7 @@ pipeline {
 			sh 'pip install requests'
 			sh 'wget https://raw.githubusercontent.com/cyclopsbarrack/webapp/master/upload-results.py'
 			sh 'chmod +x upload-results.py'
-			sh 'python upload-results.py --host 18.222.203.246:8080 --api_key 00ab3cf66d960a3513fc9c819894826e7563361c --engagement_id 1 --result _file test.xml nmap --username admin --scanner "Nmap Scan"'   
+			sh 'python upload-results.py --host 18.222.203.246:8080 --api_key 00ab3cf66d960a3513fc9c819894826e7563361c --engagement_id 1 --result _file test.xml --username admin --scanner "Nmap Scan"'   
 			// sh 'python upload-results.py --host 3.143.225.237:8080 --api_key d915aad678f94b1ca7fde4eb4016d8cc1d45a788 --engagement_id 1 --result_file trufflehog --username admin --scanner "SSL Labs Scan"'
                   //    sh 'python upload-results.py --host 13.59.142.183:8080 --api_key d915aad678f94b1ca7fde4eb4016d8cc1d45a788 --engagement_id 5 --result_file /var/lib/jenkins/OWASP-Dependency-Check/reports/dependency-check-report.xml --username admin --scanner "Dependency Check Scan"'
  }
